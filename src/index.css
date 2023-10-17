@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.banner-section{
+   
+  background: rgb(238,174,202);
+  background:  radial-gradient(circle, rgba(63,94,251,0.7372198879551821) 0%, rgba(252,70,162,0.5019257703081232) 100%);
+}

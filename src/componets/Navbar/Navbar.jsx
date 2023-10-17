@@ -105,7 +105,7 @@ const Navbar = () => {
         </label>
         
            
-           <Link to=''>
+           <Link to='/login'>
            <button className="btn text-sky-500 font-bold">Login</button>
           </Link>
         

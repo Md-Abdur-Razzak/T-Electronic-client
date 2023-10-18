@@ -9,10 +9,12 @@ import Mycart from "../Pages/Mycart";
 import Brand_Products from "../Brands/Brand_Products";
 import Update from "../Pages/Update";
 import Product_Details from "../Pages/Product_Details";
+import Errorpage from "../Pages/Errorpage";
 
 export const myRouter = createBrowserRouter([{
     path:"/",
     element:<Maincontiner></Maincontiner>,
+    errorElement:<Errorpage></Errorpage>,
     children:[
         {
             path:"/",

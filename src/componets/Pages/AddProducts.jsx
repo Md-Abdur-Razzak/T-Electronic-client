@@ -1,4 +1,5 @@
 import React from 'react';
+import {toast} from 'react-toastify'
 
 const AddProducts = () => {
     const handelAddData = (e) =>{
@@ -13,6 +14,21 @@ const AddProducts = () => {
         const productImg = from.pImg.value
         const prodectsAllDetails = {Rating,productDetais,productImg,productPrice,typesofproducts,productsName,BrandName}
       console.log(prodectsAllDetails);
+      fetch('http://localhost:3000/Addproduct',{
+        method:"POST",
+        headers:{
+          'content-type':"application/json"
+        },
+        body:JSON.stringify(prodectsAllDetails)
+      })
+      .then(res=>res.json())
+      .then((data)=>{
+        if (data.insertedId) {
+          toast.success("Product Add Successfully")
+          from.reset()
+          
+        }
+      })
 
     }
    

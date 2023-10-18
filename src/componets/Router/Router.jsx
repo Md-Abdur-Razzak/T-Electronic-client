@@ -6,6 +6,7 @@ import Registration from "../Uservarified/Registration";
 import AddProducts from "../Pages/AddProducts";
 import ProviteRouter from "./ProviteRouter";
 import Mycart from "../Pages/Mycart";
+import Brand_Products from "../Brands/Brand_Products";
 
 export const myRouter = createBrowserRouter([{
     path:"/",
@@ -30,6 +31,11 @@ export const myRouter = createBrowserRouter([{
         {
             path:"/mycart",
             element:<ProviteRouter><Mycart></Mycart></ProviteRouter>
+        },
+        {
+            path:"/bpro/:name",
+            element:<Brand_Products></Brand_Products>,
+            loader:()=>fetch("/data.json")
         }
     ]
 }])

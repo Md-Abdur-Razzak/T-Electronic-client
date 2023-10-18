@@ -5,6 +5,7 @@ export const MyContext =createContext(null)
 const Authprovider = ({children}) => {
     const [users,setCurrentUser]=useState(null)
     const [brands,setBrands]=useState([])
+    const [slider,setSlider]=useState([])
     const [lodder,setLodder]=useState(true)
     const creatEmilAndPassword = (email,password)=>{
         setLodder(true)
@@ -36,6 +37,11 @@ const Authprovider = ({children}) => {
         .then(res=>res.json())
         .then(data=>setBrands(data))
     },[])
+    useEffect(()=>{
+        fetch('/slider.json')
+        .then(res=>res.json())
+        .then(data=>setSlider(data))
+    },[])
 
     const passingData = {
         users,
@@ -43,7 +49,8 @@ const Authprovider = ({children}) => {
         singWithEmailAndPassword,
         logOutUser,
         lodder,
-        brands
+        brands,
+        slider
     }
     return (
         <MyContext.Provider value={passingData}>

@@ -14,7 +14,7 @@ const Brands = () => {
            {
                 brands?.map(brand=><Link to={`/bpro/${brand.name}`} key={brand.id}>
                 <div className="card  bg-base-100 shadow-xl">
-                    <figure><img src={brand.logo} alt="Shoes" /></figure>
+                    <figure><img className='h-[200px]' src={brand.logo} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">{brand.name}</h2>
                         

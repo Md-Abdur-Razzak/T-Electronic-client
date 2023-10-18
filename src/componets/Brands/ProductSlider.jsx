@@ -1,10 +1,5 @@
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { Parallax, Pagination, Navigation } from 'swiper/modules';
-import './Silider.css';
+
 
 const ProductSlider = ({slider}) => {
     const {BrandName}=slider

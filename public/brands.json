@@ -2,31 +2,31 @@
    {
     "id":1,
     "name":"Apple",
-    "logo":"https://i.dawn.com/large/2022/01/61d3efc17edd4.jpg"
+    "logo":"https://i.ibb.co/HK69qDT/Apple.png"
    },
    {
     "id":2,
     "name":"Samsung",
-    "logo":"https://i.dawn.com/large/2022/01/61d3efc17edd4.jpg"
+    "logo":"https://i.ibb.co/dGp7w20/samdangn.png"
    },
    {
     "id":3,
     "name":"Sony",
-    "logo":"https://i.dawn.com/large/2022/01/61d3efc17edd4.jpg"
+    "logo":"https://i.ibb.co/5cW0dpT/sonyp.png"
    },
    {
     "id":4,
     "name":"Intel",
-    "logo":"https://i.dawn.com/large/2022/01/61d3efc17edd4.jpg"
+    "logo":"https://i.ibb.co/DLMzK3J/intelp-n.png"
    },
    {
     "id":5,
-    "name":"Vivo",
-    "logo":"https://i.dawn.com/large/2022/01/61d3efc17edd4.jpg"
+    "name":"Oppo",
+    "logo":"https://i.ibb.co/P5m1fwc/opp-n-removebg-preview.png"
    },
    {
     "id":6,
     "name":"Google",
-    "logo":"https://i.dawn.com/large/2022/01/61d3efc17edd4.jpg"
+    "logo":"https://i.ibb.co/BrmPJ90/gogolen.png"
    }
 ]

@@ -25,7 +25,7 @@ const SeminaryProduct = ({product}) => {
         <hr />
             <div className="flex justify-between">
             <button className="btn btn-primary">Details</button>
-            <Link to={`/update/:${_id}`}><button className="btn btn-primary">Update</button></Link>
+            <Link to={`/update/${_id}`}><button className="btn btn-primary">Update</button></Link>
             </div>
         </div>
     </div>

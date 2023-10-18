@@ -7,6 +7,7 @@ import AddProducts from "../Pages/AddProducts";
 import ProviteRouter from "./ProviteRouter";
 import Mycart from "../Pages/Mycart";
 import Brand_Products from "../Brands/Brand_Products";
+import Update from "../Pages/Update";
 
 export const myRouter = createBrowserRouter([{
     path:"/",
@@ -36,6 +37,11 @@ export const myRouter = createBrowserRouter([{
             path:"/bpro/:name",
             element:<Brand_Products></Brand_Products>,
             loader:()=>fetch("http://localhost:3000/Addproduct")
+        },
+        {
+            path:"/update/:id",
+            element:<Update></Update>,
+            loader:({params})=>fetch(`http://localhost:3000/Addproduct/${params.id}`)
         }
     ]
 }])

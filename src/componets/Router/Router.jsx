@@ -35,7 +35,7 @@ export const myRouter = createBrowserRouter([{
         {
             path:"/bpro/:name",
             element:<Brand_Products></Brand_Products>,
-            loader:()=>fetch("/data.json")
+            loader:()=>fetch("http://localhost:3000/Addproduct")
         }
     ]
 }])

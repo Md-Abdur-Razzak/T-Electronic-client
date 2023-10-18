@@ -1,22 +1,27 @@
 import React, {  useEffect, useState } from 'react';
 
 import { useLoaderData, useParams } from 'react-router-dom';
-import ProductSlider from './ProductSlider';
+import SeminaryProduct from './SeminaryProduct';
+
 
 
 const Brand_Products = () => {
-   const [newD,setDAta]=useState([])
+   const [brandProduct,setBrandProduct]=useState([])
     const newData = useLoaderData()
   const {name} = useParams()
   useEffect (()=>{
-    const finter = newData?.filter(data=>data.name == name)
-    setDAta(finter)
+    const filter = newData?.filter(data=>data.BrandName == name)
+    console.log(filter);
+    setBrandProduct(filter)
   },[name,newData])
     return (
-        <div>
-        
-     
-           {newD.map(slider=><ProductSlider slider={slider}  key={slider.id}></ProductSlider>)}
+        <div className='bg-blue-200 mt-[70px]'>
+       
+          <div className='md:w-[80%] w-[90%] mx-auto'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-4'>
+                {brandProduct.map(product=><SeminaryProduct product={product} key={product._id}></SeminaryProduct>)}
+           </div>
+          </div>
         </div>
     );
 };

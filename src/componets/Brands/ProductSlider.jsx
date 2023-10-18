@@ -7,7 +7,7 @@ import { Parallax, Pagination, Navigation } from 'swiper/modules';
 import './Silider.css';
 
 const ProductSlider = ({slider}) => {
-    const {name}=slider
+    const {BrandName}=slider
     return (
         <div>
         <Swiper
@@ -36,7 +36,7 @@ const ProductSlider = ({slider}) => {
     ></div>
     <SwiperSlide>
       <div  className="title text-black" data-swiper-parallax="-300">
-       {name}
+       {BrandName}
       </div>
       <div className="subtitle" data-swiper-parallax="-200">
         Subtitle

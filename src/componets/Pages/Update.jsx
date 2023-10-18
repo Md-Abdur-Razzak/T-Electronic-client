@@ -1,11 +1,33 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const Update = () => {
     const updateData = useLoaderData()
     
-    const handelAddUpdate = () =>{
-
+    const handelAddUpdate = (e) =>{
+            e.preventDefault()
+            const from = e.target
+            const productsName = from.pName.value
+            const BrandName = from.BrandName.value
+            const productPrice = from.pPrice.value
+            const productDetais = from.pDetails.value
+            const typesofproducts = from.typesofproducts.value
+            const Rating=from.Rating.value
+            const productImg = from.pImg.value
+            const prodectsAllDetails = {Rating,productDetais,productImg,productPrice,typesofproducts,productsName,BrandName}
+          console.log(prodectsAllDetails);
+            fetch(`http://localhost:3000/Addproduct/${updateData._id}`,{
+                method:"PUT",
+                headers:{
+                    'content-type':'application/json'
+                },
+                body :JSON.stringify(prodectsAllDetails)
+            })
+            .then(res =>res.json())
+            .then((data)=>{
+               toast.success("product Update successfully")
+            })
     }
     return (
         <div>

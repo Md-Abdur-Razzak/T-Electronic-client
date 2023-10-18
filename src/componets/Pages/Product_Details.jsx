@@ -1,14 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
 
-const SeminaryProduct = ({product}) => {
-    const  {_id,Rating,productDetais,productImg,productPrice,typesofproducts,productsName,BrandName} =product
-
+const Product_Details = () => {
+    const data = useLoaderData()
+    const  {_id,Rating,productDetais,productImg,productPrice,typesofproducts,productsName,BrandName} =data
+    console.log(data);
     return (
-        <div className='mt-[50px]'>
-           <div className="card card-compact  bg-base-100 shadow-xl">
-            <img className='h-[250px]' src={productImg} alt="Shoes" />
-        <div className="card-body">
+        <div className='mt-[100px]'>
+          <div className='lg:w-[60%] md:w-[70%] w-[80%] mx-auto justify-evenly items-center md:flex gap-20'>
+            <div><img className='h-[350px] w-[500px]' src={productImg} alt="" /></div>
+            <div className='space-y-4'>
             <h2 className="card-title">{productsName}</h2>
             <h2 className="card-title">{BrandName}</h2>
             <p>{productDetais}</p>
@@ -22,15 +23,11 @@ const SeminaryProduct = ({product}) => {
             <h1>{Rating}</h1>
         </div>
         <h1>{productPrice}</h1>
-        <hr />
-            <div className="flex justify-between">
-            <Link to={`/details/${_id}`}><button className="btn btn-primary">Details</button></Link>
-            <Link to={`/update/${_id}`}><button className="btn btn-primary">Update</button></Link>
+        <button className='btn bg-blue-500 text-white'>Add to Cart</button>
             </div>
+          </div>
         </div>
-    </div>
-</div>
     );
 };
 
-export default SeminaryProduct;
+export default Product_Details;

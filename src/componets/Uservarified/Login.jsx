@@ -29,30 +29,30 @@ const Login = () => {
 })
    }
     return (
-        <div className=' bg-base-200 pb-9 '>
+        <div className='banner-section  pb-9 '>
         <div className=''>
        
         </div>
-          <div className="hero bg-base-200">
+          <div className="hero banner-section ">
         <div className="hero-content flex-col mt-20">
           <div className="text-center lg:text-left ">
             <h1 className="text-5xl font-bold">Login now! </h1>
           
           </div>
-          <div className="card  border border-3 border-cyan-700 flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mt-3">
+          <div className="card  border border-3 border-cyan-700 flex-shrink-0 md:w-full    shadow-2xl bg-base-100 mt-3">
           <form onSubmit={handelLogin}>
           <div className="card-body">
-              <div className="form-control">
+              <div className="form-control ">
                 <label className="label">
                   <span className="label-text">Email</span>
                 </label>
-                <input type="email" name='email' placeholder="email" required className="input input-bordered w-72 " />
+                <input type="email" name='email' placeholder="email" required className="input input-bordered w-[100%] " />
               </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
-                <input type="password" name='password' placeholder="password" required className="input input-bordered" />
+                <input type="password" name='password' placeholder="password" required className="input input-bordered w-[100%]" />
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                 </label>

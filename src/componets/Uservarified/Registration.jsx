@@ -28,43 +28,44 @@ const Registration = () => {
       })
     }
     return (
-        <div className='bg-[rgba(227,224,240,0.52)]'>
-        <div>
- 
-        </div>
-        <div className="hero pb-9 py-2.5">
-         
-         <div className="hero-content flex-col mt-20">
-           <div className="text-center lg:text-left ">
+        <>
+        
+           <div className="flex justify-center mt-14 ">
              <h1 className="text-5xl font-bold">Registration</h1>
            
            </div>
-           <div className="card border border-3 border-cyan-700 flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mt-3">
+         
+          
+          <div className="hero  min-h-screen pb-3 py-2.5">
+         
+         
+      
+           <div className=" card border border-3 border-cyan-700 flex-shrink-0 md:w-full w-[80%]  max-[363px]:w-[90%]  max-w-[600px] py-9 md:px-16 px-5  shadow-2xl bg-base-100 mt-3">
            <form onSubmit={handelRegistration} >
-           <div className="card-body">
-               <div className="form-control">
+      
+               <div className="form-control  mt-1">
                  <label className="label">
                    <span className="label-text">Name</span>
                  </label>
-                 <input type="text" placeholder="Name" name='name'  className="input input-bordered " />
+                 <input type="text" placeholder="Name" name='name'  className="input w-full input-bordered " />
                </div>
-               <div className="form-control">
+               <div className="form-control mt-3">
                  <label className="label">
-                   <span className="label-text">PhotoURL</span>
+                   <span className="label-text mt-3">PhotoURL</span>
                  </label>
-                 <input type="text" placeholder="PhotoURL" name='img' className="input input-bordered w-72" />
+                 <input type="text" placeholder="PhotoURL" name='img' className="input w-full input-bordered " />
                </div>
-               <div className="form-control">
+               <div className="form-control mt-3">
                  <label className="label">
                    <span className="label-text">Email</span>
                  </label>
-                 <input type="email" placeholder="email" name='email' required className="input input-bordered w-72" />
+                 <input type="email" placeholder="email" name='email' required className="input input-bordered w-full" />
                </div>
-               <div className="form-control">
+               <div className="form-control mt-3">
                  <label className="label">
                    <span className="label-text">Password</span>
                  </label>
-                 <input type="password" name='password' placeholder="password" required className="input input-bordered" />
+                 <input type="password" name='password' placeholder="password" required className="input w-full input-bordered" />
                 
                </div>
                <div className="form-control mt-6">
@@ -73,12 +74,17 @@ const Registration = () => {
                <div className='text-xl'>
                   <span>Already have an account? <Link to={"/login"} className='text-blue-600 underline'>Login</Link></span>
                </div>
-             </div>
+           
            </form>
            </div>
          </div>
-       </div>
-     </div>
+        
+        </>
+       
+    
+      
+       
+    
     );
 };
 

@@ -54,14 +54,14 @@ const Navbar = () => {
             }
             >Add Product</NavLink>
             <NavLink
-            to={`/Po`}
+            to={`/mycart`}
             className={({ isActive, isPending }) =>
             isActive
             ? "text-[blue] underline"
             : isPending
             ? "pending"
             : ""}
-            >Populer Events</NavLink>
+            >My Cart</NavLink>
           </ul>
         </div>
             <div className='md:flex flex-col justify-center items-center'>
@@ -92,14 +92,14 @@ const Navbar = () => {
             }
             >Add Product</NavLink>
             <NavLink
-            to={`/Po`}
+            to={`/mycart`}
             className={({ isActive, isPending }) =>
             isActive
             ? "text-[blue] underline"
             : isPending
             ? "pending"
             : ""}
-            >Populer Events</NavLink>
+            >My Cart</NavLink>
         </ul>
       </div>
       <div className="navbar-end md:px-12">

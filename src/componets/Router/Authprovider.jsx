@@ -4,6 +4,7 @@ import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndP
 export const MyContext =createContext(null) 
 const Authprovider = ({children}) => {
     const [users,setCurrentUser]=useState(null)
+    const [brands,setBrands]=useState([])
     const [lodder,setLodder]=useState(true)
     const creatEmilAndPassword = (email,password)=>{
         setLodder(true)
@@ -30,12 +31,19 @@ const Authprovider = ({children}) => {
 
         return signOut(auth)
     }
+    useEffect(()=>{
+        fetch('/brands.json')
+        .then(res=>res.json())
+        .then(data=>setBrands(data))
+    },[])
+
     const passingData = {
         users,
         creatEmilAndPassword,
         singWithEmailAndPassword,
         logOutUser,
-        lodder
+        lodder,
+        brands
     }
     return (
         <MyContext.Provider value={passingData}>

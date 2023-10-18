@@ -5,6 +5,7 @@ import Login from "../Uservarified/Login";
 import Registration from "../Uservarified/Registration";
 import AddProducts from "../Pages/AddProducts";
 import ProviteRouter from "./ProviteRouter";
+import Mycart from "../Pages/Mycart";
 
 export const myRouter = createBrowserRouter([{
     path:"/",
@@ -25,6 +26,10 @@ export const myRouter = createBrowserRouter([{
         {
             path:"/add_product",
             element:<ProviteRouter><AddProducts></AddProducts></ProviteRouter>
+        },
+        {
+            path:"/mycart",
+            element:<ProviteRouter><Mycart></Mycart></ProviteRouter>
         }
     ]
 }])

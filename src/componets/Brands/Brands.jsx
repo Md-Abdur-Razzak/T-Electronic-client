@@ -6,7 +6,7 @@ const Brands = () => {
     const {brands} = useContext(MyContext)
     return (
       <>
-         <div className='bg-[#aeedf4] mt-[120px]'>
+         <div className='bg-[#aeedf4] mt-[120px] pb-[90px]'>
          <div className='flex justify-center p-12'>
                  <h1 className='text-5xl font-extrabold'>Our Brands </h1>
             </div>

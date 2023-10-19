@@ -33,7 +33,7 @@ const Authprovider = ({children}) => {
         return signOut(auth)
     }
     useEffect(()=>{
-        fetch('/brands.json')
+        fetch('http://localhost:3000/brands')
         .then(res=>res.json())
         .then(data=>setBrands(data))
     },[])

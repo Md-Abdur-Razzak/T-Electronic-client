@@ -1,25 +1,35 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { MyContext } from '../Router/Authprovider';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { updateProfile } from 'firebase/auth';
 
 const Registration = () => {
     const {creatEmilAndPassword}=useContext(MyContext)
+    const navigate = useNavigate()
+    const blogLocation = useLocation()
     const handelRegistration = (e) =>{
         e.preventDefault()
             const email = e.target.email.value
             const password = e.target.password.value
-            // const name = e.target.name.value
-            // const img = e.target.img.value
+            const name = e.target.name.value
+            const img = e.target.img.value
             console.log(email,password);
             
         if (! /^(?=.*[A-Z])(?=.*[\W_]).{6,}$/.test(password)){
             return toast.error("Password must be at least 6 characters long and contain at least one uppercase letter and one special character  ")
         }
+
       
         creatEmilAndPassword(email,password)
         .then((res)=>{
+          updateProfile(res.user,{
+            displayName:name,
+            photoURL:img
+          })
+          
+          navigate(blogLocation?.state? blogLocation.state :"/")
            return toast.success("congratulations!  Registration successful ")
           
       })

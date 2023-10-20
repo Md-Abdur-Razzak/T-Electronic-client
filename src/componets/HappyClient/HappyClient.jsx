@@ -21,13 +21,13 @@ const HappyClient = () => {
         {
           avatar: AVTR1,
           name: 'Nuna Ama McBrown',
-          review: 'Education and Tarining People has good communication and work ethic. I would recommend his services to others and will continue to work with seller on expanding my website features. Thank you again.'
+          review: 'Technology and Electronics People has good communication and work ethic. I would recommend his services to others and will continue to work with seller on expanding my website features. Thank you again.'
         
         },
         {
           avatar: AVTR2,
           name: 'Shatta Wale',
-          review: 'It is always a pleasure working with Education and Tarining People. Works to get things the way we wanted them. Very happy and look forward working again together for future services we may have.'
+          review: 'It is always a pleasure working with Technology and Electronics People. Works to get things the way we wanted them. Very happy and look forward working again together for future services we may have.'
         },
         {
           avatar: AVTR3,
@@ -37,7 +37,7 @@ const HappyClient = () => {
         {
           avatar: AVTR4,
           name: 'Tine Snow',
-          review: 'Very professional service, delivered on time. Educational and Training communicates well at every stage to check I am happy, using videos to show changes, which is great for a website beginner like me definitely would recommend.'
+          review: 'Very professional service, delivered on time. Technology and Electronics communicates well at every stage to check I am happy, using videos to show changes, which is great for a website beginner like me definitely would recommend.'
         },
       ]
     return (

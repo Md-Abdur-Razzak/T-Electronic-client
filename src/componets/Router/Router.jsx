@@ -39,17 +39,17 @@ export const myRouter = createBrowserRouter([{
         {
             path:"/bpro/:name",
             element:<Brand_Products></Brand_Products>,
-            loader:()=>fetch("http://localhost:3000/Addproduct")
+            loader:()=>fetch("https://tae-sever-side.vercel.app/Addproduct")
         },
         {
             path:"/update/:id",
-            element:<Update></Update>,
-            loader:({params})=>fetch(`http://localhost:3000/Addproduct/${params.id}`)
+            element:<ProviteRouter><Update></Update></ProviteRouter>,
+            loader:({params})=>fetch(`https://tae-sever-side.vercel.app/Addproduct/${params.id}`)
         },
         {
             path:"/details/:id",
             element:<ProviteRouter><Product_Details></Product_Details></ProviteRouter>,
-            loader:({params})=>fetch(`http://localhost:3000/Addproduct/${params.id}`)
+            loader:({params})=>fetch(`https://tae-sever-side.vercel.app/Addproduct/${params.id}`)
         }
     ]
 }])

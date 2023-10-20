@@ -1,32 +1,87 @@
 [
     {
      "id":1,
-     "name":"Apple",
-     "det":"appplegggggggggggggggggggggggggggggggg"
+     "brand":"Apple",
+     "des1":" Up to 50% Off",
+     "name1":"IPHONE 14 PRO",
+     "des2":"Discounts Await, Shop Away",
+     "name2":"macbook-pro-14",
+     "des3":"Up to 50% Off! ",
+     "name3":"IPAD PRO",
+     "img1":" https://i.ibb.co/zSKqNt8/iphone14.webp",
+     "img2":"https://i.ibb.co/SwJZwRD/macbook-pro-14-and-16.png ",
+     "img3":"https://i.ibb.co/YcBxRSM/IPad-Pro.jpg "
+     
     },
     {
      "id":2,
-     "name":"Samsung",
-     "det":"samnge..............gjgkljjgkfdsg"
+     "brand":"Samsung",
+     "des1":"Don't Miss Out! Up to 50% Off",
+     "name1":"Samsung Galaxy Tab s5e",
+     "des2":"New Season, New Deals: Get 30% Off!",
+     "name2":"Samsung Galaxy Watch6 Series",
+     "des3":"Limited Time Offer: Save Big Today!",
+     "name3":"Samsung UHD/4K TVs",
+     "img1":" https://i.ibb.co/fqBVVRM/09-23-2019-Samsung-Galaxy-Tab-S5e-and-Samsung-Galaxy-3.jpg",
+     "img2":"https://i.ibb.co/710T0DZ/samsang-bandnet.jpg ",
+     "img3":"https://i.ibb.co/1MVBBQP/samsng-thembel-img.jpg "
+     
     },
     {
      "id":3,
-     "name":"Sony",
-     "det":"Sonyfffffffffffffffffffffffff"
+     "brand":"Sony",
+     "des1":"Up to 50% Off",
+     "name1":"Sony WH-1000XM4",
+     "des2":"Hurry, Prices Slashed",
+     "name2":"Sony Xperia ",
+     "des3":"Shop, Save, Repeat",
+     "name3":"Nikon Coolpix P1000 Digital Camera",
+     "img1":" https://i.ibb.co/CVGrhVH/sony-wh-1000xm4-00013.webp",
+     "img2":"https://i.ibb.co/0FL8QJt/xperia-10-10-plus-duo-front-back-banner.jpg ",
+     "img3":"https://i.ibb.co/tB7X2wX/pngtree-sony-fdr-ax100-4k-uhd-handycam-20443384.jpg "
+     
     },
     {
      "id":4,
-     "name":"Intel",
-     "det":"Intffffffff"
+     "brand":"Intel",
+     "des1":"Hot Prices, Cool Savings!",
+     "name1":"Intel s 14th-gen Raptor Lake Refresh",
+     "des2":"Last Chance for Discounts",
+     "name2":"Intel s new integrated graphics could rival discrete GPUs",
+     "des3":"Discounts Await, Shop Away!",
+     "name3":"Intel Atom x5  bvannder img",
+     "img1":" https://i.ibb.co/rFF3Fg3/alder-lake-chir.webp",
+     "img2":"https://i.ibb.co/JzSfrgB/intel-meteor-lake-vpu.webp",
+     "img3":"https://i.ibb.co/MhYT4tM/intel-atom-x5jpg.jpg "
+     
     },
     {
      "id":5,
-     "name":"Oppo",
-     "det":"oppppgdsfffffffffffffgsdgsdfg"
+     "brand":"Oppo",
+     "des1":"Big Savings, Small Prices",
+     "name1":"Oppo Find X2",
+     "des2":"Prices Down, Savings Up!",
+     "name2":"Oppo Reno 7 series ",
+     "des3":"Up to 50% Off! ",
+     "name3":"Oppo N-Lens",
+     "img1":" https://i.ibb.co/gMxVmdr/Oppo-1.webp",
+     "img2":"https://i.ibb.co/2vxq4cV/oppo-watch-free.png ",
+     "img3":"https://i.ibb.co/QbYZ2hP/Oppo-Find-N-camera-housing.jpg "
+     
     },
     {
      "id":6,
-     "name":"Google",
-     "det":"gogolffffffffdddgdfsgsdf"
+     "brand":"Google",
+     "des1":" Big Savings, Small Prices",
+     "name1":"Google Nest Mini",
+     "des2":"Prices Down, Savings Up!",
+     "name2":"Nest Cam Battery ",
+     "des3":"Up to 50% Off! ",
+     "name3":"Google Pixel 4a",
+     "img1":" https://i.ibb.co/2sVQJdb/2-GA00781-US.jpg",
+     "img2":"https://i.ibb.co/ZYyDKcr/nest-cam-indoor-outdoor.webp ",
+     "img3":"https://i.ibb.co/XVn7N2R/images.jpg "
+     
     }
+    
  ]

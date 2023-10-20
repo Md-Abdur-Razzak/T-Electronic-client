@@ -6,9 +6,9 @@ const TopsalerCord = ({item}) => {
     return (
         <div>
             <Link>
-                <div className=" bg-base-100 shadow-xl rounded-md">
-                  <figure> <img className='h-[250px] w-full ' src={img} alt="Shoes" /></figure>
-                    <div className="p-4 bg-[#0c0c48] h-[200px] rounded-b-md text-white">
+                <div className=" shadow-xl border border-[#1c1c60] rounded-md">
+                  <figure> <img className='h-[250px] w-full  rounded-t-md' src={img} alt="Shoes" /></figure>
+                    <div className="p-4 ] h-[200px] rounded-b-md ">
                         <span className="inline rounded-full py-2 text-white px-3 bg-[#123e3f]">{brand}</span>
                        
                         <h2 className="card-title p-2 font-bold">{name}</h2>

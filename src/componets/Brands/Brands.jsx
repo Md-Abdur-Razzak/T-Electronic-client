@@ -6,14 +6,14 @@ const Brands = () => {
     const {brands} = useContext(MyContext)
     return (
       <>
-         <div className='bg-[#aeedf4] mt-[120px] pb-[90px]'>
+         <div className='mt-[120px] pb-[90px]'>
          <div className='flex justify-center p-12'>
                  <h1 className='text-5xl font-extrabold'>Our Brands </h1>
             </div>
-        <div className='w-[80%] mx-auto grid lg:grid-cols-3 md:grid-cols-2 mt-[10px] gap-4'>
+        <div className='w-[80%]  mx-auto grid lg:grid-cols-3 md:grid-cols-2 mt-[10px] gap-4'>
            {
-                brands?.map(brand=><Link to={`/bpro/${brand.name}`} key={brand.id}>
-                <div className="card  bg-base-100 shadow-xl">
+                brands?.map(brand=><Link to={`/bpro/${brand.name}`} key={brand._id}>
+                <div className="card  shadow-xl border border-[#4a4af0]">
                     <figure><img className='h-[200px]' src={brand.logo} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">{brand.name}</h2>

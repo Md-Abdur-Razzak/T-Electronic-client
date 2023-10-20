@@ -1,6 +1,6 @@
 import React, {  createContext, useContext, useEffect, useState } from 'react';
 import { auth } from '../firbase/firebase.config';
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
+import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth';
 export const MyContext =createContext(null) 
 const Authprovider = ({children}) => {
     const [users,setCurrentUser]=useState(null)
@@ -15,6 +15,16 @@ const Authprovider = ({children}) => {
         setLodder(true)
          return signInWithEmailAndPassword(auth,email,password)
     }
+    const googleAthntocation = () =>{
+        setLodder(true)
+        const provider = new GoogleAuthProvider()
+        return signInWithPopup(auth,provider)
+    }
+    const githubAthntocation = () =>{
+        setLodder(true)
+                 const provider = new GithubAuthProvider()
+                 return signInWithPopup(auth,provider)
+        }
     useEffect (()=>{
         const unsubcribe= onAuthStateChanged(auth,(user)=>{
           
@@ -33,7 +43,7 @@ const Authprovider = ({children}) => {
         return signOut(auth)
     }
     useEffect(()=>{
-        fetch('http://localhost:3000/brands')
+        fetch('https://tae-sever-side.vercel.app/brands')
         .then(res=>res.json())
         .then(data=>setBrands(data))
     },[])
@@ -50,7 +60,9 @@ const Authprovider = ({children}) => {
         logOutUser,
         lodder,
         brands,
-        slider
+        slider,
+        googleAthntocation,
+        githubAthntocation,
     }
     return (
         <MyContext.Provider value={passingData}>

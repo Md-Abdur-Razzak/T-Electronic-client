@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MycartsDetails = ({data,hadeldelet}) => {
-  const {Rating,productDetais,productImg,productPrice,typesofproducts,productsName,BrandName,_id}=data
+  const {productImg,productPrice,productsName,BrandName,_id}=data
     return (
         <div>
                 <div >
@@ -18,7 +18,7 @@ const MycartsDetails = ({data,hadeldelet}) => {
                     <div className='text-xl font-semibold flex flex-wrap gap-3'>
                         <div className='flex items-center gap-2'>
                            
-                            <p>${productPrice}</p>
+                            <p>{productPrice}</p>
                            
                         </div>
                     

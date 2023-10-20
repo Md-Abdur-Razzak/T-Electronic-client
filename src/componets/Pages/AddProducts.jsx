@@ -10,11 +10,11 @@ const AddProducts = () => {
         const productPrice = from.pPrice.value
         const productDetais = from.pDetails.value
         const typesofproducts = from.typesofproducts.value
-        const Rating=from.Rating.value
+        const rating=from.Rating.value
         const productImg = from.pImg.value
-        const prodectsAllDetails = {Rating,productDetais,productImg,productPrice,typesofproducts,productsName,BrandName}
+        const prodectsAllDetails = {rating,productDetais,productImg,productPrice,typesofproducts,productsName,BrandName}
       console.log(prodectsAllDetails);
-      fetch('http://localhost:3000/Addproduct',{
+      fetch('https://tae-sever-side.vercel.app/Addproduct',{
         method:"POST",
         headers:{
           'content-type':"application/json"
@@ -55,7 +55,7 @@ const AddProducts = () => {
           <label className="label">
             <span className="label-text">BrandName</span>
           </label>
-          <select  className="select select-primary w-full max-w-xs " name='BrandName'>
+          <select  className="select select-primary w-full max-w-xs " name='BrandName' required>
               <option disabled selected>Brand Name </option>
               <option>Apple</option>
               <option>Samsung</option>
@@ -72,7 +72,7 @@ const AddProducts = () => {
           <label className="label">
             <span className="label-text">price</span>
           </label>
-          <input type="text" placeholder="price" name='pPrice' className="input input-bordered w-full" required />
+          <input type="text" placeholder="$200" name='pPrice' className="input input-bordered w-full" required />
         </div>
         <div className="form-control w-full">
           <label className="label">

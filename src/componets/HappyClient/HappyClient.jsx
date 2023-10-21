@@ -42,7 +42,7 @@ const HappyClient = () => {
       ]
     return (
         <section id='testimonials'>
-        <div className='flex justify-center text-5xl font-extrabold pb-14'>
+        <div className='flex justify-center md:text-5xl text-xl font-extrabold pb-14'>
             Our <span className='text-blue-400 px-2'>Happy</span> Clients
         </div>
   

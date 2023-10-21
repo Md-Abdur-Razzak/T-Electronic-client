@@ -11,7 +11,7 @@ const Topsalary = () => {
     
     return (
         <div className=' mt-36 py-12'>
-        <h1 className='text-4xl  font-extrabold flex justify-center'>Top sellers Products</h1>
+        <h1 className='md:text-4xl text-2xl  font-extrabold flex justify-center'>Top sellers Products</h1>
             <div className='w-[80%] mx-auto grid lg:grid-cols-3 md:grid-cols-2 mt-[70px] gap-4'>
                 {
                     sale.map(item=><TopsalerCord item={item} key={item._id}></TopsalerCord>)

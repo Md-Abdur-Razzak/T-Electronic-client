@@ -1,10 +1,10 @@
 import icon from "../../assets/2592818.png"
 const Fotter = () => {
     return (
-       <div className='mt-[100px] bg-[#1f4b8e] lg:h-[400px] md:h-[800px]'>
+       <div className='mt-[100px] bg-[#1f4b8e] lg:h-[400px] md:h-[900px] '>
             
             <div className='md:flex md:justify-between flex-wrap  w-[80%] bg-red pt-[100px] mx-auto text-white'>
-                <div className='w-[300px] flex flex-col justify-center items-center gap-3 '>
+                <div className='md:w-[300px] flex flex-col justify-center items-center gap-3 '>
                     <img className='w-9' src={icon} alt="" />
                     <p className='text-justify'>Technology and electronics refer to the fields of knowledge and the physical devices that involve the use of electrical circuits and digital systems to process, transmit, store, and manipulate information.</p>
                     <div className='flex gap-2 text-3xl font-bold'>
@@ -33,7 +33,7 @@ const Fotter = () => {
                 
                
             </div>
-            <hr className='mt-9' />
+            <hr className='' />
             <div className='flex justify-center text-[#918987] mt-3 md:text-xl'>
                 Copyright © 2023 TechElectroHub. All Rights Reserved.
             </div>

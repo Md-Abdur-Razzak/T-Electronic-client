@@ -37,8 +37,8 @@ console.log(rating);
             <div><img className='h-[350px] md:w-[500px] rounded-md w-[100%]' src={productImg} alt="" /></div>
             <div className='space-y-4'>
            <div className='flex gap-2 text-2xl md:mt-0 mt-9 text-white  font-bold items-center '>
-            <h2 className="p-2 px-5 bg-[#0d0d3f] rounded-full">{BrandName}</h2>
-            <p className='p-2 px-5 bg-[#0d0d3f] rounded-full'>{typesofproducts}</p>
+            <h2 className="p-2 md:px-5 bg-[#0d0d3f] rounded-full">{BrandName}</h2>
+            <p className='p-2 md:px-5 bg-[hotpink] rounded-full'>{typesofproducts}</p>
            </div>
 
             <h2 className="text-3xl font-bold">{productsName}</h2>

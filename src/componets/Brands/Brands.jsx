@@ -8,7 +8,7 @@ const Brands = () => {
       <>
          <div className='mt-[120px] pb-[90px]'>
          <div className='flex justify-center p-12'>
-                 <h1 className='text-5xl font-extrabold'>Our Brands </h1>
+                 <h1 className='md:text-5xl text-2xl font-extrabold'>Our Brands </h1>
             </div>
         <div className='w-[80%]  mx-auto grid lg:grid-cols-3 md:grid-cols-2 mt-[10px] gap-4'>
            {

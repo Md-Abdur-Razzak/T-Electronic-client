@@ -16,7 +16,8 @@
     <li>You can add your own product and update that product</li>
 </ul>
 
-                                 
+
+<h1>Technology I used</h1>                                 
 <ul>
      <li>React</li>
     <li>React Router Dom</li>

@@ -1,6 +1,6 @@
 
 <h1>Technology and Electronics</h1>
-<h3>Website Live link :</h3>
+
 
 <ul>
     <li>   <a style="color: blue;" href="https://flourishing-speculoos-040368.netlify.app/" class="blue-link">Live Link</a> </li>
